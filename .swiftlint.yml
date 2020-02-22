@@ -1,0 +1,25 @@
+# Lint対象から除外するパス
+excluded:
+  - Carthage
+  - R.generated.swift
+
+# 一行の文字列制限を100文字から300文字に変更
+line_length:
+  warning: 300
+  ignores_comments: true
+
+# 無効化するルール
+disabled_rules:
+  - trailing_whitespace
+  - type_name
+
+# 追加するルール
+opt_in_rules:
+  - closure_end_indentation
+  - closure_spacing
+  - empty_count
+  - explicit_init
+  - force_unwrapping warnig
+  - operator_usage_whitespace
+  - sorted_imports
+  - switch_case_on_newline
