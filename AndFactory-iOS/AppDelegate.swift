@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  AndFactory-iOS
-//
-//  Created by member on 2020/02/22.
-//  Copyright © 2020 Shunta Nabezawa. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -16,7 +8,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         if #available(iOS 13, *) {
         } else {
-
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.makeKeyAndVisible()
+            window?.rootViewController = UINavigationController(rootViewController: UserSearchViewController())
         }
         return true
     }

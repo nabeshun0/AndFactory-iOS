@@ -1,11 +1,3 @@
-//
-//  SceneDelegate.swift
-//  AndFactory-iOS
-//
-//  Created by member on 2020/02/22.
-//  Copyright © 2020 Shunta Nabezawa. All rights reserved.
-//
-
 import UIKit
 
 @available(iOS 13.0, *)
