@@ -14,6 +14,7 @@
 		5E07275A2401239F00831FD9 /* AndFactory_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0727592401239F00831FD9 /* AndFactory_iOSUITests.swift */; };
 		5E691F71240275C80014E974 /* UserSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E691F70240275C80014E974 /* UserSearchViewController.xib */; };
 		5E691F732402B8AF0014E974 /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E691F722402B8AF0014E974 /* UserSearchViewController.swift */; };
+		5EFB5A5B2402C6830078082D /* UserSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFB5A592402C6830078082D /* UserSearchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		5E07275B2401239F00831FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E691F70240275C80014E974 /* UserSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserSearchViewController.xib; sourceTree = "<group>"; };
 		5E691F722402B8AF0014E974 /* UserSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
+		5EFB5A592402C6830078082D /* UserSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EFB5A5B2402C6830078082D /* UserSearchCell.swift in Sources */,
 				5E0727432401239D00831FD9 /* AppDelegate.swift in Sources */,
 				5E691F732402B8AF0014E974 /* UserSearchViewController.swift in Sources */,
 				5E0727452401239D00831FD9 /* SceneDelegate.swift in Sources */,
