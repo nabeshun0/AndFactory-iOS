@@ -57,7 +57,8 @@ final class SearchUserModel {
             case .success(let response):
                 self.users.append(response)
             case .failure(let error):
-                let errorMessage = ErrorMessage(title: "Error", message: error.localizedDescription)
+                print(error.localizedDescription)
+                let errorMessage = ErrorMessage(title: "Error", message: "APIレート制限により通信できません。1分後に再度利用できます。")
                 self.delegate?.searchModel(self, didRecieve: errorMessage)
             }
         }

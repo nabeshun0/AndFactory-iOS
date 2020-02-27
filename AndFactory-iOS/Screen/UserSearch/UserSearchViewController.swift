@@ -64,6 +64,7 @@ extension UserSearchViewController: SearchUserModelDelegate {
     func searchModel(_ searchModel: SearchUserModel, didRecieve errorMessage: ErrorMessage) {
         DispatchQueue.main.async {
             let alert = UIAlertController(title: errorMessage.title, message: errorMessage.message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
             self.present(alert, animated: false, completion: nil)
         }
     }
