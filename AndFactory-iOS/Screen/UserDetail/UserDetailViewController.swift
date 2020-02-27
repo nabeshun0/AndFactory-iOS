@@ -1,8 +1,9 @@
 import UIKit
+import WebKit
 
 class UserDetailViewController: UIViewController {
 
-    init() {
+    @IBOutlet weak var webView: WKWebView!
 
     let userDetailModel: UserDetailModel
 
@@ -17,5 +18,13 @@ class UserDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = userDetailModel.user.login
+        openUrl(urlString: userDetailModel.user.htmlUrl)
+    }
+
+    func openUrl(urlString: String) {
+        guard let url = URL(string: urlString) else { return }
+        let urlRequest = URLRequest(url: url)
+        webView.load(urlRequest)
     }
 }
