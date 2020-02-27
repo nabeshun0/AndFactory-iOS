@@ -59,6 +59,28 @@ extension UserSearchViewController: UISearchBarDelegate {
     }
 }
 
+extension UserSearchViewController: SearchUserModelDelegate {
+
+    func searchModel(_ searchModel: SearchUserModel, didRecieve errorMessage: ErrorMessage) {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: errorMessage.title, message: errorMessage.message, preferredStyle: .alert)
+            self.present(alert, animated: false, completion: nil)
+        }
+    }
+
+    func searchModel(_ searchModel: SearchUserModel, didChange isFetchingUsers: Bool) {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+
+    func searchModel(_ searchModel: SearchUserModel, didChange users: [SearchUserAPI.Response]) {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+}
+
 extension UserSearchViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -77,6 +99,11 @@ extension UserSearchViewController: UITableViewDataSource {
 }
 
 extension UserSearchViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        // TODO: 画面遷移
+    }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
