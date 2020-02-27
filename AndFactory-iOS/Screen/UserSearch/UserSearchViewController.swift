@@ -38,6 +38,12 @@ class UserSearchViewController: UIViewController {
         tableView.delegate = self
         tableView.register(UINib(nibName: UserSearchCell.className, bundle: nil), forCellReuseIdentifier: UserSearchCell.className)
     }
+
+    private func showUserDetailVC(with user: SearchUserAPI.User) {
+        let userDetailModel = UserDetailModel(user: user)
+        let userDetailVC = UserDetailViewController(userDetailModel: userDetailModel)
+        navigationController?.pushViewController(userDetailVC, animated: true)
+    }
 }
 
 extension UserSearchViewController: SearchUserModelDelegate {
@@ -104,7 +110,8 @@ extension UserSearchViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        // TODO: 画面遷移
+        let user = searchUserModel.users[indexPath.row]
+        showUserDetailVC(with: user)
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
