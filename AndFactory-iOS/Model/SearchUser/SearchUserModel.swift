@@ -49,6 +49,7 @@ final class SearchUserModel {
     }()
 
     func fetchUsers() {
+        if query.isEmpty { return }
         isFetchingUsers = true
 
         Session.send(SearchUserAPI.Request(userName: query), callbackQueue: nil) { [weak self] (result) in
@@ -63,6 +64,7 @@ final class SearchUserModel {
                 let errorMessage = ErrorMessage(title: "Error", message: "APIレート制限により通信できません。1分後に再度利用できます。")
                 self.delegate?.searchModel(self, didRecieve: errorMessage)
             }
+            self.isFetchingUsers = false
         }
     }
 
@@ -75,6 +77,7 @@ final class SearchUserModel {
             if query != oldValue {
                 self.users.removeAll()
             }
+            self.fetchUsers()
         }
     }
 }

@@ -24,6 +24,7 @@ class UserSearchViewController: UIViewController {
         searchBar.placeholder = "Input user name"
 
         configure(with: tableView)
+        searchUserModel.delegate = self
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -36,26 +37,6 @@ class UserSearchViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: UserSearchCell.className, bundle: nil), forCellReuseIdentifier: UserSearchCell.className)
-    }
-}
-
-extension UserSearchViewController: UISearchBarDelegate {
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder()
-        searchBar.showsCancelButton = false
-    }
-
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder()
-        searchBar.showsCancelButton = false
-    }
-
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        searchBar.showsCancelButton = true
-    }
-
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        searchUserModel.fetchUsers(withQuery: searchText)
     }
 }
 
@@ -79,6 +60,26 @@ extension UserSearchViewController: SearchUserModelDelegate {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
+    }
+}
+
+extension UserSearchViewController: UISearchBarDelegate {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        searchBar.showsCancelButton = false
+    }
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        searchBar.showsCancelButton = false
+    }
+
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = true
+    }
+
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchUserModel.fetchUsers(withQuery: searchText)
     }
 }
 
