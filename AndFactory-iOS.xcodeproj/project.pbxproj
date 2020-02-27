@@ -14,6 +14,8 @@
 		5E07275A2401239F00831FD9 /* AndFactory_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0727592401239F00831FD9 /* AndFactory_iOSUITests.swift */; };
 		5E691F71240275C80014E974 /* UserSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E691F70240275C80014E974 /* UserSearchViewController.xib */; };
 		5E691F732402B8AF0014E974 /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E691F722402B8AF0014E974 /* UserSearchViewController.swift */; };
+		5E6E8113240793370067D329 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6E8112240793370067D329 /* Nuke.framework */; };
+		5E6E8114240793370067D329 /* Nuke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6E8112240793370067D329 /* Nuke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E81ED4F24038A6C00BE0CCC /* NSObjectProtocol.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81ED4E24038A6C00BE0CCC /* NSObjectProtocol.extension.swift */; };
 		5E81ED522403F85800BE0CCC /* SearchUserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81ED512403F85800BE0CCC /* SearchUserAPI.swift */; };
 		5E81ED542403F86800BE0CCC /* SearchUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81ED532403F86800BE0CCC /* SearchUserEntity.swift */; };
@@ -44,6 +46,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				5E81ED582403FA9900BE0CCC /* APIKit.framework in Embed Frameworks */,
+				5E6E8114240793370067D329 /* Nuke.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +65,7 @@
 		5E07275B2401239F00831FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E691F70240275C80014E974 /* UserSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserSearchViewController.xib; sourceTree = "<group>"; };
 		5E691F722402B8AF0014E974 /* UserSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
+		5E6E8112240793370067D329 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
 		5E81ED4E24038A6C00BE0CCC /* NSObjectProtocol.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocol.extension.swift; sourceTree = "<group>"; };
 		5E81ED512403F85800BE0CCC /* SearchUserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserAPI.swift; sourceTree = "<group>"; };
 		5E81ED532403F86800BE0CCC /* SearchUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserEntity.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E81ED572403FA9900BE0CCC /* APIKit.framework in Frameworks */,
+				5E6E8113240793370067D329 /* Nuke.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +179,7 @@
 		5E81ED552403FA9900BE0CCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E6E8112240793370067D329 /* Nuke.framework */,
 				5E81ED562403FA9900BE0CCC /* APIKit.framework */,
 			);
 			name = Frameworks;
@@ -326,6 +332,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
 			);
 			name = "Run Script(Carthage)";
 			outputFileListPaths = (

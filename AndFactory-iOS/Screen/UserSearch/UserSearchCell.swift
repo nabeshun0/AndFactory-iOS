@@ -1,3 +1,4 @@
+import Nuke
 import UIKit
 
 class UserSearchCell: UITableViewCell {
