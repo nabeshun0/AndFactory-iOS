@@ -174,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				5E628C692407546500D1FFEC /* SearchUser */,
-				5E96CB022408245300F8E95F /* UserDetail */,
 				5E81ED5B2403FE3300BE0CCC /* APIRoutes.swift */,
 				5E81ED5D2404014300BE0CCC /* AppRequestType.swift */,
 			);
@@ -214,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				5EFB5A572402C6080078082D /* UserSearch */,
+				5E96CB022408245300F8E95F /* UserDetail */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
