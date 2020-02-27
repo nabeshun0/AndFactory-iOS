@@ -5,7 +5,10 @@ class UserSearchViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
 
-    init() {
+    let searchUserModel: SearchUserModel
+
+    init(searchUserModel: SearchUserModel) {
+        self.searchUserModel = searchUserModel
         super.init(nibName: UserSearchViewController.className, bundle: nil)
     }
 

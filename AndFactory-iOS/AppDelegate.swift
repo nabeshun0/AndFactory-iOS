@@ -10,7 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             window = UIWindow(frame: UIScreen.main.bounds)
             window?.makeKeyAndVisible()
-            window?.rootViewController = UINavigationController(rootViewController: UserSearchViewController())
+            window?.rootViewController = UINavigationController(rootViewController: UserSearchViewController(searchUserModel: .init()))
         }
         return true
     }
