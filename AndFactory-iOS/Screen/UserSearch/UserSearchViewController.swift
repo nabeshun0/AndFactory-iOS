@@ -90,12 +90,12 @@ extension UserSearchViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return searchUserModel.users.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: UserSearchCell.className, for: indexPath) as? UserSearchCell else { return UserSearchCell() }
-        cell.configure()
+        cell.configure(with: searchUserModel.users[indexPath.row])
         return cell
     }
 }
