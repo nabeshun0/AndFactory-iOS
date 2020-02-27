@@ -26,6 +26,8 @@
 		5E81ED6024040D4C00BE0CCC /* SearchUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81ED5F24040D4C00BE0CCC /* SearchUserModel.swift */; };
 		5E96CB05240824C300F8E95F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E96CB03240824C300F8E95F /* UserDetailViewController.swift */; };
 		5E96CB06240824C300F8E95F /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E96CB04240824C300F8E95F /* UserDetailViewController.xib */; };
+		5E96CB082408286F00F8E95F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E96CB072408286F00F8E95F /* WebKit.framework */; };
+		5E96CB0B24082AEF00F8E95F /* UserDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E96CB0A24082AEF00F8E95F /* UserDetailModel.swift */; };
 		5EFB5A5B2402C6830078082D /* UserSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFB5A592402C6830078082D /* UserSearchCell.swift */; };
 		5EFB5A5C2402C6830078082D /* UserSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EFB5A5A2402C6830078082D /* UserSearchCell.xib */; };
 /* End PBXBuildFile section */
@@ -77,6 +79,8 @@
 		5E81ED5F24040D4C00BE0CCC /* SearchUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserModel.swift; sourceTree = "<group>"; };
 		5E96CB03240824C300F8E95F /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		5E96CB04240824C300F8E95F /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
+		5E96CB072408286F00F8E95F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		5E96CB0A24082AEF00F8E95F /* UserDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
 		5EFB5A592402C6830078082D /* UserSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchCell.swift; sourceTree = "<group>"; };
 		5EFB5A5A2402C6830078082D /* UserSearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserSearchCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +92,7 @@
 			files = (
 				5E81ED572403FA9900BE0CCC /* APIKit.framework in Frameworks */,
 				5E6E8113240793370067D329 /* Nuke.framework in Frameworks */,
+				5E96CB082408286F00F8E95F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				5E628C692407546500D1FFEC /* SearchUser */,
+				5E96CB0924082AD600F8E95F /* UserDetail */,
 				5E81ED5B2403FE3300BE0CCC /* APIRoutes.swift */,
 				5E81ED5D2404014300BE0CCC /* AppRequestType.swift */,
 			);
@@ -183,6 +189,7 @@
 		5E81ED552403FA9900BE0CCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E96CB072408286F00F8E95F /* WebKit.framework */,
 				5E6E8112240793370067D329 /* Nuke.framework */,
 				5E81ED562403FA9900BE0CCC /* APIKit.framework */,
 			);
@@ -194,6 +201,14 @@
 			children = (
 				5E96CB03240824C300F8E95F /* UserDetailViewController.swift */,
 				5E96CB04240824C300F8E95F /* UserDetailViewController.xib */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		5E96CB0924082AD600F8E95F /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5E96CB0A24082AEF00F8E95F /* UserDetailModel.swift */,
 			);
 			path = UserDetail;
 			sourceTree = "<group>";
@@ -372,6 +387,7 @@
 				5E81ED542403F86800BE0CCC /* SearchUserEntity.swift in Sources */,
 				5E81ED5E2404014300BE0CCC /* AppRequestType.swift in Sources */,
 				5E691F732402B8AF0014E974 /* UserSearchViewController.swift in Sources */,
+				5E96CB0B24082AEF00F8E95F /* UserDetailModel.swift in Sources */,
 				5E0727452401239D00831FD9 /* SceneDelegate.swift in Sources */,
 				5E81ED5C2403FE3300BE0CCC /* APIRoutes.swift in Sources */,
 				5E81ED4F24038A6C00BE0CCC /* NSObjectProtocol.extension.swift in Sources */,
