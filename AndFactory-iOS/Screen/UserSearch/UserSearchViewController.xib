@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserSearchViewController" customModule="AndFactory_iOS" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="EeL-fN-sX1" id="bZ8-td-wiA"/>
                 <outlet property="tableView" destination="zzF-n3-1kl" id="yTo-Ow-HgV"/>
                 <outlet property="view" destination="iN0-l3-epB" id="jAZ-Yc-jJi"/>
             </connections>

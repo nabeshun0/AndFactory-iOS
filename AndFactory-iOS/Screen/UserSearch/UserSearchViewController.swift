@@ -3,6 +3,7 @@ import UIKit
 class UserSearchViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
 
     init() {
         super.init(nibName: UserSearchViewController.className, bundle: nil)
