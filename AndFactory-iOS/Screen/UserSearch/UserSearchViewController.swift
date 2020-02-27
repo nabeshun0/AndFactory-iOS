@@ -19,13 +19,43 @@ class UserSearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Search User"
+
+        searchBar.delegate = self
+        searchBar.placeholder = "Input user name"
+
         configure(with: tableView)
     }
 
-    func configure(with tableView: UITableView) {
+    override func viewWillDisappear(_ animated: Bool) {
+        if searchBar.isFirstResponder {
+            searchBar.resignFirstResponder()
+        }
+    }
+
+    private func configure(with tableView: UITableView) {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: UserSearchCell.className, bundle: nil), forCellReuseIdentifier: UserSearchCell.className)
+    }
+}
+
+extension UserSearchViewController: UISearchBarDelegate {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        searchBar.showsCancelButton = false
+    }
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        searchBar.showsCancelButton = false
+    }
+
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = true
+    }
+
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchUserModel.fetchUsers(withQuery: searchText)
     }
 }
 
