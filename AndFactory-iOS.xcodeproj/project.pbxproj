@@ -18,6 +18,7 @@
 		5E81ED522403F85800BE0CCC /* SearchUserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81ED512403F85800BE0CCC /* SearchUserAPI.swift */; };
 		5E81ED572403FA9900BE0CCC /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81ED562403FA9900BE0CCC /* APIKit.framework */; };
 		5E81ED582403FA9900BE0CCC /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81ED562403FA9900BE0CCC /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E81ED5C2403FE3300BE0CCC /* APIRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81ED5B2403FE3300BE0CCC /* APIRoutes.swift */; };
 		5E81ED5E2404014300BE0CCC /* AppRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81ED5D2404014300BE0CCC /* AppRequestType.swift */; };
 		5EFB5A5B2402C6830078082D /* UserSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFB5A592402C6830078082D /* UserSearchCell.swift */; };
 		5EFB5A5C2402C6830078082D /* UserSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EFB5A5A2402C6830078082D /* UserSearchCell.xib */; };
@@ -145,6 +146,7 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+				5E81ED5B2403FE3300BE0CCC /* APIRoutes.swift */,
 				5E81ED5D2404014300BE0CCC /* AppRequestType.swift */,
 		5E81ED552403FA9900BE0CCC /* Frameworks */ = {
 			isa = PBXGroup;
@@ -324,6 +326,7 @@
 				5E81ED5E2404014300BE0CCC /* AppRequestType.swift in Sources */,
 				5E691F732402B8AF0014E974 /* UserSearchViewController.swift in Sources */,
 				5E0727452401239D00831FD9 /* SceneDelegate.swift in Sources */,
+				5E81ED5C2403FE3300BE0CCC /* APIRoutes.swift in Sources */,
 				5E81ED4F24038A6C00BE0CCC /* NSObjectProtocol.extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
