@@ -15,6 +15,7 @@
 		5E691F71240275C80014E974 /* UserSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E691F70240275C80014E974 /* UserSearchViewController.xib */; };
 		5E691F732402B8AF0014E974 /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E691F722402B8AF0014E974 /* UserSearchViewController.swift */; };
 		5E81ED4F24038A6C00BE0CCC /* NSObjectProtocol.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81ED4E24038A6C00BE0CCC /* NSObjectProtocol.extension.swift */; };
+		5E81ED522403F85800BE0CCC /* SearchUserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81ED512403F85800BE0CCC /* SearchUserAPI.swift */; };
 		5E81ED572403FA9900BE0CCC /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81ED562403FA9900BE0CCC /* APIKit.framework */; };
 		5E81ED582403FA9900BE0CCC /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E81ED562403FA9900BE0CCC /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E81ED5E2404014300BE0CCC /* AppRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81ED5D2404014300BE0CCC /* AppRequestType.swift */; };
@@ -59,6 +60,7 @@
 		5E691F70240275C80014E974 /* UserSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserSearchViewController.xib; sourceTree = "<group>"; };
 		5E691F722402B8AF0014E974 /* UserSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
 		5E81ED4E24038A6C00BE0CCC /* NSObjectProtocol.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocol.extension.swift; sourceTree = "<group>"; };
+		5E81ED512403F85800BE0CCC /* SearchUserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserAPI.swift; sourceTree = "<group>"; };
 		5E81ED562403FA9900BE0CCC /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		5E81ED5D2404014300BE0CCC /* AppRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRequestType.swift; sourceTree = "<group>"; };
 		5EFB5A592402C6830078082D /* UserSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchCell.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			path = "AndFactory-iOSUITests";
 			sourceTree = "<group>";
 		};
+				5E81ED512403F85800BE0CCC /* SearchUserAPI.swift */,
 		5E81ED4C24038A2F00BE0CCC /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E81ED522403F85800BE0CCC /* SearchUserAPI.swift in Sources */,
 				5EFB5A5B2402C6830078082D /* UserSearchCell.swift in Sources */,
 				5E0727432401239D00831FD9 /* AppDelegate.swift in Sources */,
 				5E81ED5E2404014300BE0CCC /* AppRequestType.swift in Sources */,
