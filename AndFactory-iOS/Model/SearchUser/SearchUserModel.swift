@@ -15,7 +15,7 @@ struct ErrorMessage {
 final class SearchUserModel {
 
     weak var delegate: SearchUserModelDelegate?
-    
+
     private(set) var query: String = ""
 
     private(set) var users: [SearchUserAPI.User] = [] {

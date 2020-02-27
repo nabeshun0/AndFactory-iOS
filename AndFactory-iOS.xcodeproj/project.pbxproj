@@ -24,6 +24,8 @@
 		5E81ED5C2403FE3300BE0CCC /* APIRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81ED5B2403FE3300BE0CCC /* APIRoutes.swift */; };
 		5E81ED5E2404014300BE0CCC /* AppRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81ED5D2404014300BE0CCC /* AppRequestType.swift */; };
 		5E81ED6024040D4C00BE0CCC /* SearchUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81ED5F24040D4C00BE0CCC /* SearchUserModel.swift */; };
+		5E96CB05240824C300F8E95F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E96CB03240824C300F8E95F /* UserDetailViewController.swift */; };
+		5E96CB06240824C300F8E95F /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E96CB04240824C300F8E95F /* UserDetailViewController.xib */; };
 		5EFB5A5B2402C6830078082D /* UserSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFB5A592402C6830078082D /* UserSearchCell.swift */; };
 		5EFB5A5C2402C6830078082D /* UserSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EFB5A5A2402C6830078082D /* UserSearchCell.xib */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,8 @@
 		5E81ED5B2403FE3300BE0CCC /* APIRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoutes.swift; sourceTree = "<group>"; };
 		5E81ED5D2404014300BE0CCC /* AppRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRequestType.swift; sourceTree = "<group>"; };
 		5E81ED5F24040D4C00BE0CCC /* SearchUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserModel.swift; sourceTree = "<group>"; };
+		5E96CB03240824C300F8E95F /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		5E96CB04240824C300F8E95F /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
 		5EFB5A592402C6830078082D /* UserSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchCell.swift; sourceTree = "<group>"; };
 		5EFB5A5A2402C6830078082D /* UserSearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserSearchCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +189,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5E96CB022408245300F8E95F /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5E96CB03240824C300F8E95F /* UserDetailViewController.swift */,
+				5E96CB04240824C300F8E95F /* UserDetailViewController.xib */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
 		5EFB5A572402C6080078082D /* UserSearch */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				5EFB5A572402C6080078082D /* UserSearch */,
+				5E96CB022408245300F8E95F /* UserDetail */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -289,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EFB5A5C2402C6830078082D /* UserSearchCell.xib in Resources */,
+				5E96CB06240824C300F8E95F /* UserDetailViewController.xib in Resources */,
 				5E07274F2401239F00831FD9 /* LaunchScreen.storyboard in Resources */,
 				5E07274C2401239F00831FD9 /* Assets.xcassets in Resources */,
 				5E691F71240275C80014E974 /* UserSearchViewController.xib in Resources */,
@@ -360,6 +375,7 @@
 				5E0727452401239D00831FD9 /* SceneDelegate.swift in Sources */,
 				5E81ED5C2403FE3300BE0CCC /* APIRoutes.swift in Sources */,
 				5E81ED4F24038A6C00BE0CCC /* NSObjectProtocol.extension.swift in Sources */,
+				5E96CB05240824C300F8E95F /* UserDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
