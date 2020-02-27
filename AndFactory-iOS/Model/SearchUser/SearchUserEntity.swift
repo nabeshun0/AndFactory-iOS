@@ -9,11 +9,13 @@ extension SearchUserAPI {
         public var login: String
         public var type: String
         public var avatarUrl: String
+        public var htmlUrl: String
 
         enum CodingKeys: String, CodingKey {
             case login
             case type
             case avatarUrl = "avatar_url"
+            case htmlUrl = "html_url"
         }
     }
 }
