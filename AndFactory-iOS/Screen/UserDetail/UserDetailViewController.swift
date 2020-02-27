@@ -3,6 +3,11 @@ import UIKit
 class UserDetailViewController: UIViewController {
 
     init() {
+
+    let userDetailModel: UserDetailModel
+
+    init(userDetailModel: UserDetailModel) {
+        self.userDetailModel = userDetailModel
         super.init(nibName: UserDetailViewController.className, bundle: nil)
     }
 
