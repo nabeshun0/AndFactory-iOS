@@ -4,7 +4,7 @@ import Foundation
 protocol SearchUserModelDelegate: AnyObject {
     func searchModel(_ searchModel: SearchUserModel, didRecieve errorMessage: ErrorMessage)
     func searchModel(_ searchModel: SearchUserModel, didChange isFetchingUsers: Bool)
-    func searchModel(_ searchModel: SearchUserModel, didChange users: [SearchUserAPI.Response])
+    func searchModel(_ searchModel: SearchUserModel, didChange users: [SearchUserAPI.User])
 }
 
 struct ErrorMessage {
@@ -15,10 +15,10 @@ struct ErrorMessage {
 final class SearchUserModel {
 
     weak var delegate: SearchUserModelDelegate?
-
+    
     private(set) var query: String = ""
 
-    private(set) var users: [SearchUserAPI.Response] = [] {
+    private(set) var users: [SearchUserAPI.User] = [] {
         didSet {
             delegate?.searchModel(self, didChange: users)
         }
@@ -55,7 +55,9 @@ final class SearchUserModel {
             guard let self = self else { return }
             switch result {
             case .success(let response):
-                self.users.append(response)
+                response.items.forEach { [weak self] in
+                    self?.users.append($0)
+                }
             case .failure(let error):
                 print(error.localizedDescription)
                 let errorMessage = ErrorMessage(title: "Error", message: "APIレート制限により通信できません。1分後に再度利用できます。")

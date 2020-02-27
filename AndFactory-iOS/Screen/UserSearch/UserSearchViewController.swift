@@ -75,7 +75,7 @@ extension UserSearchViewController: SearchUserModelDelegate {
         }
     }
 
-    func searchModel(_ searchModel: SearchUserModel, didChange users: [SearchUserAPI.Response]) {
+    func searchModel(_ searchModel: SearchUserModel, didChange users: [SearchUserAPI.User]) {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
