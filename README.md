@@ -6,8 +6,15 @@
 ## 📖 ライブラリ管理
 - Carthage version: 0.34.0 
 
+## 🧘‍♀️使用ライブラリ
+### ネットワーク通信
+- [APIKit](https://github.com/ishkawa/APIKit)
+
+### 画像取得
+- [Nuke](https://github.com/kean/Nuke)
+
 ## 👮 静的管理ツール
-- SwiftLint
+- [SwiftLint](https://github.com/realm/SwiftLint)
 
 ## 🐱 GitFlow
 - master
