@@ -9,15 +9,22 @@
 ## 👮 静的管理ツール
 - SwiftLint
 
-## 🧑‍💻設計
+## GitFlow
+
+![TBHkD](https://user-images.githubusercontent.com/38596913/75508280-eaa28d00-5a26-11ea-9d78-04a7a143ff06.png)
+
+
+## 🧑‍💻　設計
 - MVC
 
-## 🏋️導入方法
+![01-MVC-Diagram-480x241](https://user-images.githubusercontent.com/38596913/75508274-e5ddd900-5a26-11ea-9228-23578f45b09c.png)
+
+## 🏋️　導入方法
 ```
 carthage update --platform iOS
 ```
 
-## API
+## 🌍　API
 - ドキュメント
 
 https://developer.github.com/v3/search/#search-users
