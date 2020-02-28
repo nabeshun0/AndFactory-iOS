@@ -31,6 +31,13 @@
 carthage update --platform iOS
 ```
 
+## ViewControllers
+- UserSearchVC
+  - 画面上部の入力エリアに検索ワード(ユーザ名部分一致)を入力し、結果をUITableViewに表示する
+
+- UserDetailVC
+  - 検索画面で選択したユーザ情報をwebviewで表示する
+  
 ## 🌍　API
 - ドキュメント
 
