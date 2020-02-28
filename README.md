@@ -40,11 +40,6 @@ fastlane custom_lane
 
 ![01-MVC-Diagram-480x241](https://user-images.githubusercontent.com/38596913/75508274-e5ddd900-5a26-11ea-9228-23578f45b09c.png)
 
-## 🏋️ 導入方法
-```
-carthage update --platform iOS
-```
-
 ## 🌈 ViewControllers
 - UserSearchVC
   - 画面上部の入力エリアに検索ワード(ユーザ名部分一致)を入力し、結果をUITableViewに表示する
@@ -59,6 +54,11 @@ https://developer.github.com/v3/search/#search-users
 ``` 
 GET https://api.github.com/search/users?q=[username]
 
+```
+
+## 🏋️ 導入方法
+```
+carthage update --platform iOS
 ```
 
 ## 🎡 必要条件
