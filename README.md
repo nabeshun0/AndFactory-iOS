@@ -6,6 +6,9 @@
 ## 📖 ライブラリ管理
 - Carthage version: 0.34.0 
 
+## 👮 静的管理ツール
+- SwiftLint
+
 ## 🧑‍💻設計
 - MVC
 
@@ -16,6 +19,7 @@ carthage update --platform iOS
 
 ## API
 - ドキュメント
+
 https://developer.github.com/v3/search/#search-users
 ``` 
 GET https://api.github.com/search/users?q=[username]
