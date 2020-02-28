@@ -21,7 +21,6 @@
 
 ![TBHkD](https://user-images.githubusercontent.com/38596913/75508280-eaa28d00-5a26-11ea-9d78-04a7a143ff06.png)
 
-
 ## 🧑‍💻　設計
 - MVC
 
@@ -40,6 +39,11 @@ https://developer.github.com/v3/search/#search-users
 GET https://api.github.com/search/users?q=[username]
 
 ```
+
+## 🎡 必要条件
+- Xcode 11.1 or later
+- iOS 11 or later
+- Swift 5.0 or later
 
 ## ⚠️注意事項
 - GithubAPIは1分間に10回リクエストをするとレート制限がかかり、503エラーになります。
