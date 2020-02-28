@@ -10,6 +10,14 @@
 - SwiftLint
 
 ## GitFlow
+- master
+  - プロダクトとしてリリースするためのブランチ。リリースしたらタグ付けする。
+
+- develop
+  - 開発ブランチ。コードが安定し、リリース準備ができたら master へマージする。リリース前はこのブランチが最新バージョンとなる。
+
+- feature branches
+  - 機能の追加。 develop から分岐し、 develop にマージする。
 
 ![TBHkD](https://user-images.githubusercontent.com/38596913/75508280-eaa28d00-5a26-11ea-9d78-04a7a143ff06.png)
 
