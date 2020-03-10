@@ -14,8 +14,8 @@ extension SearchUserAPI {
         enum CodingKeys: String, CodingKey {
             case login
             case type
-            case avatarUrl = "avatar_url"
-            case htmlUrl = "html_url"
+            case avatarUrl
+            case htmlUrl
         }
     }
 }

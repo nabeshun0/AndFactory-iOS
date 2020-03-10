@@ -33,6 +33,8 @@ extension AppRequestType where Response: Decodable {
         guard let data = object as? Data else {
             throw ResponseError.unexpectedObject(object)
         }
-        return try JSONDecoder().decode(Response.self, from: data)
+        let jsonDecoder = JSONDecoder()
+        jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+        return try jsonDecoder.decode(Response.self, from: data)
     }
 }
