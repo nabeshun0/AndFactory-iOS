@@ -1,11 +1,11 @@
 import UIKit
 
-class UserSearchViewController: UIViewController {
+final class UserSearchViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var searchBar: UISearchBar!
 
-    let searchUserModel: SearchUserModel
+    private let searchUserModel: SearchUserModel
 
     init(searchUserModel: SearchUserModel) {
         self.searchUserModel = searchUserModel

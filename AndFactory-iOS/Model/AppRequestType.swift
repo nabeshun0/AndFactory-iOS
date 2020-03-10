@@ -1,6 +1,6 @@
 import APIKit
 
-public class DecodableDataParser: DataParser {
+final class DecodableDataParser: DataParser {
     public var contentType: String? {
         return "application/json"
     }

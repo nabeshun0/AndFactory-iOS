@@ -1,13 +1,13 @@
 import Nuke
 import UIKit
 
-class UserSearchCell: UITableViewCell {
+final class UserSearchCell: UITableViewCell {
 
-    @IBOutlet weak var thumbnailImageView: UIImageView!
-    @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var userTypeLabel: UILabel!
+    @IBOutlet private weak var thumbnailImageView: UIImageView!
+    @IBOutlet private weak var userNameLabel: UILabel!
+    @IBOutlet private weak var userTypeLabel: UILabel!
 
-    public func configure(with user: SearchUserAPI.User) {
+    func configure(with user: SearchUserAPI.User) {
         guard let url = URL(string: user.avatarUrl) else { return }
         let options = ImageLoadingOptions(transition: .fadeIn(duration: 0.35))
         Nuke.loadImage(with: url, options: options, into: thumbnailImageView)

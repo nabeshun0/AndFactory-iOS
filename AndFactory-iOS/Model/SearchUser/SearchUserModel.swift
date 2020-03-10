@@ -48,7 +48,7 @@ final class SearchUserModel {
         }
     }()
 
-    func fetchUsers() {
+    private func fetchUsers() {
         if query.isEmpty { return }
         isFetchingUsers = true
 
